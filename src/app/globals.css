@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #0a0a23;
+  --color-secondary: #1e1e50;
+  --color-accent: #5252d4;
+  --color-text: #e6e6eb;
+  --color-text-secondary: #a1a1b5;
+  --color-white: #f4f4f5;
+  --color-discrepancy: #2a2a3c;
+  --color-light-accent: #7878ff;
+
+  --shadow-custom: 0 4px 6px var(--color-primary);
+  --text-shadow-custom: 0 2px 4px var(--color-primary);
+  --drop-shadow-custom: drop-shadow(0 4px 6px var(--color-primary));
+}
+
+/* Estilos personalizados */
+.text-gradient {
+  background: linear-gradient(to right, var(--color-secondary), var(--color-accent));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @theme inline {
@@ -20,7 +37,65 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(40.8%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+.sliding-text {
+  animation: slideText 50s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+@keyframes floating-0 {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50% { transform: translate(-50%, -50%) translateY(-8px); }
+}
+@keyframes floating-1 {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50% { transform: translate(-50%, -50%) translateY(-6px); }
+}
+@keyframes floating-2 {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50% { transform: translate(-50%, -50%) translateY(-10px); }
+}
+@keyframes floating-3 {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50% { transform: translate(-50%, -50%) translateY(-7px); }
+}
+@keyframes scale-0 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.05); }
+}
+@keyframes scale-1 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.08); }
+}
+@keyframes scale-2 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.03); }
 }
