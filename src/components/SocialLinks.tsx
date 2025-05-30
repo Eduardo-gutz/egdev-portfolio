@@ -1,46 +1,10 @@
-import { GithubIcon, LinkedinIcon, DribbbleIcon } from 'boxicons-react';
-
-interface SocialLink {
-  icon: React.ElementType;
-  url: string;
-  label: string;
-  highlighted?: boolean;
-}
-
+import { SocialLink, userLinks } from '@/utils/userLinks';
 interface SocialLinksProps {
   links?: SocialLink[];
   className?: string;
 }
 
-const defaultLinks: SocialLink[] = [
-  {
-    icon: GithubIcon,
-    url: '#',
-    label: 'GitHub',
-  },
-  {
-    icon: LinkedinIcon,
-    url: '#',
-    label: 'LinkedIn'
-  },
-  {
-    icon: LinkedinIcon,
-    url: '#',
-    label: 'LinkedIn'
-  },
-  {
-    icon: LinkedinIcon,
-    url: '#',
-    label: 'LinkedIn'
-  },
-  {
-    icon: DribbbleIcon,
-    url: '#',
-    label: 'Dribbble'
-  }
-];
-
-export const SocialLinks = ({ links = defaultLinks, className = '' }: SocialLinksProps) => {
+export const SocialLinks = ({ links = userLinks, className = '' }: SocialLinksProps) => {
   return (
     <div className={`flex gap-2 ${className}`}>
       {links.map((link, index) => (

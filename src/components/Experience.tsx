@@ -1,26 +1,35 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import Card from './Card';
+import { getJobs } from '@/services/skills';
+import { Job } from '@/interfaces/job.interface';
+import { Timestamp } from 'firebase/firestore';
 
-interface Achievement {
-  text: string;
-  icon: 'trophy' | 'star' | 'check';
-}
+const months = [
+  "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+]
 
-interface Job {
-  title: string;
-  company: string;
-  period: string;
-  description: string;
-  achievements: Achievement[];
-}
+const Experience = () => {
+  const [jobs, setJobs] = useState<Job[]>([])
 
-interface ExperienceProps {
-  jobs: Job[];
-}
+  const formatDate = (date: Timestamp) => {
+    const dateObj = date.toDate()
+    const day = dateObj.getDate()
+    const month = months[dateObj.getMonth()]
+    const year = dateObj.getFullYear()
+    return `${day} de ${month} de ${year}`
+  }
 
-const Experience: React.FC<ExperienceProps> = ({ jobs }) => {
+  useEffect(() => {
+    (async () => {
+      const jobs = await getJobs()
+      setJobs(jobs)
+    })()
+  }, [])
+
   return (
-    <section className="py-20 px-4 md:px-8">
+    <section id="experience" className="py-20 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-12 max-w-5xl mx-auto">Experiencia Laboral</h2>
         <div className="relative">
@@ -38,9 +47,9 @@ const Experience: React.FC<ExperienceProps> = ({ jobs }) => {
                 </div>
                 <Card>
                   <div className="flex flex-col">
-                    <h3 className="text-2xl font-semibold text-white">{job.title}</h3>
-                    <p className="text-accent font-medium mt-1">{job.company}</p>
-                    <p className="text-gray-400 text-sm mt-1">{job.period}</p>
+                    <h3 className="text-2xl font-semibold text-white">{job.position.es}</h3>
+                    <p className="text-light-accent font-medium mt-1">{job.company}</p>
+                    <p className="text-gray-400 text-sm mt-1">{formatDate(job.startAt)} - {job.endAt ? formatDate(job.endAt) : 'Presente'}</p>
                     <p className="text-gray-300 mt-3">{job.description}</p>
                   </div>
                 </Card>

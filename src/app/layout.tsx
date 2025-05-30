@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import "boxicons-react/styles"
+import { ToastContainer } from "react-toastify";
 
 const chakra = Chakra_Petch({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -17,7 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark">
-      <body className={`${chakra.className} bg-gray-800 text-white`}>
+      <body className={`${chakra.className} bg-gray-800 text-white scroll-smooth`}>
+        <ToastContainer position="bottom-right" />
         {children}
       </body>
     </html>

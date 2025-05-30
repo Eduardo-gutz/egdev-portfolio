@@ -1,0 +1,13 @@
+{
+    "name": "Eduardo",
+    "lastName": "Gutierrez",
+    "description": "Desarrollador Fullstack apasionado por la creación de código limpio, mantenible y eficiente. Mi enfoque se centra en optimizar el desarrollo de software, implementando las mejores prácticas para asegurar la calidad en cada proyecto.",
+    "imagePath": "/profile.png",
+    "initAsDev": "2020-08-11",
+    "about": "Como desarrollador Fullstack, cuento con una sólida trayectoria en la construcción de soluciones web robustas y escalables. Mi compromiso con el aprendizaje continuo me impulsa a estar al día con las últimas tecnologías y metodologías, siempre con el objetivo de superar las expectativas del cliente y garantizar el éxito del proyecto.",
+    "experience": "de experiencia en el desarrollo de aplicaciones web y móviles.",
+    "availability": "Disponible",
+    "phone": "+52 246 168 41 74",
+    "email": "eduardogutzfl@gmail.com",
+    "position": "Desarrollador Fullstack"
+}

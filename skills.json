@@ -1,0 +1,154 @@
+[
+    {
+        "name": "React",
+        "description": {
+            "es": "Biblioteca JavaScript para construir interfaces de usuario interactivas y reutilizables.",
+            "en": "JavaScript library for building interactive and reusable user interfaces."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Freact-2.svg?alt=media&token=c80686a2-25b9-445f-802c-8351aa5bdc45"
+    },
+    {
+        "name": "NextJs",
+        "description": {
+            "es": "Framework de React para aplicaciones web con renderizado en servidor (SSR) y generación de sitios estáticos.",
+            "en": "React framework for server-side rendered (SSR) web applications and static site generation."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fnextjs-icon-svgrepo-com.svg?alt=media&token=74c6bbf0-4c12-49b7-88b1-4887ad0b11a4"
+    },
+    {
+        "name": "TailwindCSS",
+        "description": {
+            "es": "Framework CSS de utilidad primero para construir diseños personalizados rápidamente.",
+            "en": "Utility-first CSS framework for rapidly building custom designs."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Ftailwindcss-icon-svgrepo-com.svg?alt=media&token=5dff5948-8dcf-4162-b5a3-b597f60ab602"
+    },
+    {
+        "name": "NodeJs",
+        "description": {
+            "es": "Entorno de ejecución JavaScript del lado del servidor, basado en el motor V8 de Chrome.",
+            "en": "Server-side JavaScript runtime environment built on Chrome's V8 engine."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fnodejs-icon-logo-svgrepo-com.svg?alt=media&token=34aa3094-8a59-4ac0-8746-05897b377a3b"
+    },
+    {
+        "name": "MongoDB",
+        "description": {
+            "es": "Base de datos NoSQL orientada a documentos, escalable y flexible.",
+            "en": "Scalable and flexible document-oriented NoSQL database."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fmongo-svgrepo-com.svg?alt=media&token=bfb4823a-3ba7-4b04-a8f5-49836b4d7327"
+    },
+    {
+        "name": "Git",
+        "description": {
+            "es": "Sistema de control de versiones distribuido para el seguimiento de cambios en el código.",
+            "en": "Distributed version control system for tracking changes in code."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fgit-svgrepo-com.svg?alt=media&token=a60c4375-aafe-4f8e-b759-5ded818d1462"
+    },
+    {
+        "name": "GitHub",
+        "description": {
+            "es": "Plataforma de desarrollo colaborativo para alojar y revisar código, gestionar proyectos y construir software.",
+            "en": "Collaborative development platform for hosting and reviewing code, managing projects, and building software."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fgithub-142-svgrepo-com.svg?alt=media&token=c95f3d46-1782-485d-b95e-0bab44058206"
+    },
+    {
+        "name": "AWS",
+        "description": {
+            "es": "Plataforma de servicios de computación en la nube amplia y bajo demanda.",
+            "en": "Comprehensive, on-demand cloud computing services platform."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Faws-svgrepo-com.svg?alt=media&token=ae134277-7720-4327-a720-30c6818f582e"
+    },
+    {
+        "name": "Firebase",
+        "description": {
+            "es": "Plataforma de desarrollo de aplicaciones móviles y web de Google con backend como servicio.",
+            "en": "Google's mobile and web application development platform with backend-as-a-service."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Ffirebase_28dp.png?alt=media&token=b27c30f4-9db5-4d9e-820a-a7610b1012de"
+    },
+    {
+        "name": "React Native",
+        "description": {
+            "es": "Framework para construir aplicaciones móviles nativas usando React y JavaScript.",
+            "en": "Framework for building native mobile applications using React and JavaScript."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Freact-2.svg?alt=media&token=c80686a2-25b9-445f-802c-8351aa5bdc45"
+    },
+    {
+        "name": "Python",
+        "description": {
+            "es": "Lenguaje de programación interpretado, de alto nivel y propósito general.",
+            "en": "Interpreted, high-level, general-purpose programming language."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fpython-svgrepo-com.svg?alt=media&token=4fc83f75-11a9-47be-87c9-020b5713aa4e"
+    },
+    {
+        "name": "FastApi",
+        "description": {
+            "es": "Framework web moderno y rápido (de alto rendimiento) para construir APIs con Python.",
+            "en": "Modern, fast (high-performance) web framework for building APIs with Python."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Ffastapi-svgrepo-com.svg?alt=media&token=9ba2749f-246b-41d8-858d-374a33eeb8e3"
+    },
+    {
+        "name": "NestJs",
+        "description": {
+            "es": "Framework progresivo de Node.js para construir aplicaciones del lado del servidor eficientes y escalables.",
+            "en": "Progressive Node.js framework for building efficient and scalable server-side applications."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fnestjs-svgrepo-com.svg?alt=media&token=f4084495-94e3-4990-86eb-e9a9999943cf"
+    },
+    {
+        "name": "Figma",
+        "description": {
+            "es": "Herramienta de diseño de interfaces colaborativa basada en la web.",
+            "en": "Collaborative web-based interface design tool."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Ffigma-svgrepo-com.svg?alt=media&token=f092a101-09ec-43d4-b29f-3d725e39345e"
+    },
+    {
+        "name": "HTML",
+        "description": {
+            "es": "Lenguaje de marcado estándar para crear y estructurar contenido en la web.",
+            "en": "Standard markup language for creating and structuring content on the web."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2FHTMLsvg.svg?alt=media&token=ab01d748-e55e-4449-af16-3493296dcbc3"
+    },
+    {
+        "name": "CSS",
+        "description": {
+            "es": "Lenguaje de hojas de estilo utilizado para describir la presentación de un documento HTML.",
+            "en": "Style sheet language used for describing the presentation of an HTML document."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2FCSSsvg.svg?alt=media&token=55d4326d-20e1-4a2f-bba6-7a2d70fe8ab0"
+    },
+    {
+        "name": "JavaScript",
+        "description": {
+            "es": "Lenguaje de programación de alto nivel, interpretado y multiparadigma, esencial para el desarrollo web.",
+            "en": "High-level, interpreted, multi-paradigm programming language, essential for web development."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2FJSsvg.svg?alt=media&token=a9805dc3-8185-4818-a2de-838e4195f961"
+    },
+    {
+        "name": "TypeScript",
+        "description": {
+            "es": "Superset de JavaScript que añade tipado estático opcional al lenguaje.",
+            "en": "Superset of JavaScript that adds optional static typing to the language."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Ftypescript-official-svgrepo-com.svg?alt=media&token=a19d7d01-6775-476d-bf53-da802b0a3405"
+    },
+    {
+        "name": "VueJs",
+        "description": {
+            "es": "Framework progresivo de JavaScript para construir interfaces de usuario y aplicaciones de una sola página.",
+            "en": "Progressive JavaScript framework for building user interfaces and single-page applications."
+        },
+        "image": "https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/skills%2Fvue-js.svg?alt=media&token=7db0014d-3eee-4fb3-8c4b-8679a3a25a4e"
+    }
+]

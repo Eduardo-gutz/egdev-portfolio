@@ -1,26 +1,34 @@
-import { FaReact, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
-
-const skills = [
-  { name: 'React', icon: <FaReact /> },
-  { name: 'Node.js', icon: <FaNodeJs /> },
-  { name: 'Python', icon: <FaPython /> },
-  { name: 'TypeScript', icon: <SiTypescript /> },
-  { name: 'TailwindCSS', icon: <SiTailwindcss /> },
-  { name: 'Next.js', icon: <SiNextdotjs /> },
-  { name: 'SQL', icon: <FaDatabase /> },
-];
+'use client'
+import { useEffect } from 'react';
+import { getSkills } from '@/services/skills';
+import { Skill } from '@/interfaces/skill.interface';
+import { useState } from 'react';
+import Image from 'next/image';
 
 const SkillsBar = () => {
+  const [skills, setSkills] = useState<Skill[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      const skills = await getSkills()
+      setSkills(skills.sort((a, b) => a.priority - b.priority))
+    })()
+  }, [])
   return (
     <div className="w-full overflow-hidden bg-secondary backdrop-blur-sm py-4">
       <div className="flex animate-slide">
-        {[...skills, ...skills].map((skill, index) => (
+        {[...skills, ...skills, ...skills].map((skill, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 text-light-accent mx-8 text-xl"
+            className="flex items-center gap-2 text-light-accent mx-8 text-xl min-w-fit"
           >
-            <span className="text-2xl">{skill.icon}</span>
+            <Image
+              src={skill.image}
+              alt={skill.name}
+              width={24}
+              height={24}
+              className="object-contain group-hover:brightness-110"
+            />
             <span>{skill.name}</span>
           </div>
         ))}
