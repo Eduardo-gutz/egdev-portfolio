@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EGDev Portfolio
 
-## Getting Started
+Este es mi portafolio personal desarrollado con Next.js, TypeScript y Tailwind CSS. El proyecto muestra mis habilidades, proyectos y experiencia como desarrollador.
 
-First, run the development server:
+## 🚀 Características
 
+- Diseño moderno y responsive
+- Optimización de rendimiento con Next.js
+- Integración con Firebase
+- Sistema de contacto mediante EmailJS
+- Animaciones y transiciones suaves
+- Soporte para iconos con Boxicons y Lucide React
+- Notificaciones con React Toastify
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Next.js 15.3.2** - Framework de React para producción
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Framework de utilidades CSS
+- **Firebase** - Backend y servicios en la nube
+- **EmailJS** - Servicio de envío de correos
+- **React Icons** - Biblioteca de iconos
+- **React Toastify** - Sistema de notificaciones
+
+## 🏁 Comenzando
+
+### Prerrequisitos
+
+- Node.js (versión recomendada: 18.x o superior)
+- npm o yarn
+
+### Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tu-usuario/egdev-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+npm install
+# o
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+# o
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Learn More
+## 📝 Scripts Disponibles
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Inicia el servidor de desarrollo con Turbopack
+- `npm run build` - Construye la aplicación para producción
+- `npm run start` - Inicia el servidor de producción
+- `npm run lint` - Ejecuta el linter
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Configuración
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El proyecto utiliza varias configuraciones personalizadas:
 
-## Deploy on Vercel
+- `next.config.ts` - Configuración de Next.js
+- `tsconfig.json` - Configuración de TypeScript
+- `tailwind.config.js` - Configuración de Tailwind CSS
+- `eslint.config.mjs` - Configuración de ESLint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto es privado y personal.
+
+## 📧 Contacto
+
+Para cualquier consulta o colaboración, no dudes en contactarme a través del formulario de contacto en el sitio web.
