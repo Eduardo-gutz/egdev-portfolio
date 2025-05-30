@@ -30,7 +30,7 @@ const Projects = () => {
               key={index}
               className={`${colSpanClass} relative`}
             >
-              <Card className="!p-2 min-h-[450px] !overflow-hidden">
+              <Card className="!p-2 min-h-[450px] !overflow-hidden group">
                 <div className="relative aspect-video h-3/4 max-w-full">
                   <Image
                     src={project.image}
@@ -41,7 +41,7 @@ const Projects = () => {
                 </div>
                 <div className="absolute bottom-0 left-0 p-6 backdrop-blur-md bg-secondary/50 rounded-2xl">
                   <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                  <p className="text-white mb-3">{project.description}</p>
+                  <p className="text-white mb-3 h-0 overflow-hidden group-hover:h-auto !transition-all duration-300">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tools.map((tool, toolIndex) => (
                       <span

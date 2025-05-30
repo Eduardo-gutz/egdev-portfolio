@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="fixed w-full top-0 z-50 bg-secondary/25 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-white">Eduardo Gutierrez</div>
-        <button 
+        <button
           className="md:hidden text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -23,9 +23,14 @@ const Navbar = () => {
           <Link href="#portfolio" className="text-text hover:text-white">Proyectos</Link>
           <Link href="#contact" className="text-text hover:text-white">Contacto</Link>
         </div>
-        <button className="hidden md:block bg-secondary text-white px-4 py-2 rounded-full hover:bg-accent">
+        <a
+          href="https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/Eduardo_Guti%C3%A9rrez.docx.pdf?alt=media&token=6bb88c93-2701-4c7c-a02c-a3d855493690"
+          className="hidden md:block bg-secondary text-white px-4 py-2 rounded-full hover:bg-accent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Descargar CV
-        </button>
+        </a>
       </div>
     </nav>
   );
