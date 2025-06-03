@@ -45,13 +45,13 @@ const Hero = ({ name, lastName, description, imagePath, position }: HeroProps) =
           </div>
         </div>
         <div className="w-full lg:w-1/2 relative z-0 flex justify-center lg:justify-start mt-8 lg:mt-0">
-          <div className="aspect-square rounded-2xl md:rounded-3xl overflow-hidden w-[280px] sm:w-[350px] md:w-[450px] lg:w-[500px] xl:w-[700px]">
+          <div className="aspect-square rounded-2xl md:rounded-3xl overflow-hidden w-[450px] sm:w-[450px] md:w-[450px] lg:w-[500px] xl:w-[700px]">
             <Image
               src={imagePath}
               alt={`${name} ${lastName}`}
               width={700}
               height={700}
-              className="object-cover w-full h-full opacity-90"
+              className="object-contain w-full h-full opacity-90"
               priority
             />
           </div>
