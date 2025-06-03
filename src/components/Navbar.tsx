@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link href="#contact" className="text-text hover:text-white">Contacto</Link>
         </div>
         <a
-          href="https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/Eduardo_Guti%C3%A9rrez.docx.pdf?alt=media&token=6bb88c93-2701-4c7c-a02c-a3d855493690"
+          href="https://firebasestorage.googleapis.com/v0/b/eduardo-gutierrez-portfolio.appspot.com/o/Eduardo_Guti%C3%A9rrez.pdf?alt=media&token=8e6bdec0-a8e9-4a9d-9e2f-4ac14b604dcb"
           className="hidden md:block bg-secondary text-white px-4 py-2 rounded-full hover:bg-accent"
           target="_blank"
           rel="noopener noreferrer"
